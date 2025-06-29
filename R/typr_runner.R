@@ -6,7 +6,7 @@ run_typr_file <- function() {
   if (is.null(context$path) || context$path == "") {
     rstudioapi::showDialog(
       title = "Error",
-      message = "No file opened or saved"
+      message = "Select an opened and saved file"
     )
     return()
   }
