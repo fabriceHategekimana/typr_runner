@@ -1,4 +1,4 @@
-#' Run TypR files
+#' Run TypR files in terminal (version simplifiée)
 #' @export
 run_typr_file <- function() {
   context <- rstudioapi::getActiveDocumentContext()
@@ -12,9 +12,17 @@ run_typr_file <- function() {
   }
   
   nom_fichier <- basename(context$path)
-  chemin_complet <- context$path
+  repertoire <- dirname(context$path)
   
-  commande <- paste0("typr ", nom_fichier)
-  rstudioapi::sendToConsole(commande, execute = TRUE)
+  # Construire la commande complète
+  commande <- paste0("cd \"", repertoire, "\" && typr \"", nom_fichier, "\"")
   
+  # Créer un nouveau terminal et exécuter la commande
+  terminal_id <- rstudioapi::terminalCreate(
+    caption = paste("TypR -", nom_fichier),
+    show = TRUE
+  )
+  
+  # Envoyer la commande au terminal
+  rstudioapi::terminalSend(terminal_id, commande)
 }
