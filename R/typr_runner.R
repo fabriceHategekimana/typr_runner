@@ -24,5 +24,5 @@ run_typr_file <- function() {
   )
   
   # Envoyer la commande au terminal
-  rstudioapi::terminalSend(terminal_id, commande1)
+  rstudioapi::terminalExecute(terminal_id, commande1)
 }
