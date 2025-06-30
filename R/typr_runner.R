@@ -16,7 +16,8 @@ run_typr_file <- function() {
   repertoire <- dirname(context$path)
   
   # Construire la commande complète
-  commande1 <- paste0("typr ", nom_fichier)
+  #commande1 <- paste0("typr ", nom_fichier)
+  commande1 <- paste0("ls")
   
   # Envoyer la commande au terminal
   #rstudioapi::terminalExecute(commande1, workingDir = repertoire, env = env_vars, show = TRUE)
