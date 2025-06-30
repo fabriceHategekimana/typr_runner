@@ -11,7 +11,6 @@ run_typr_file <- function() {
     return()
   }
   
-  rstudioapi::terminalKill()
   nom_fichier <- basename(context$path)
   repertoire <- dirname(context$path)
   
