@@ -11,11 +11,12 @@ run_typr_file <- function() {
     return()
   }
   
+  rstudioapi::terminalKill()
   nom_fichier <- basename(context$path)
   repertoire <- dirname(context$path)
   
   # Construire la commande complète
-  commande1 <- paste0("cd ", repertoire, "/")
+  commande1 <- paste0("cd ", repertoire)
   commande2 <- paste0("typr ", nom_fichier)
   
   # Créer un nouveau terminal et exécuter la commande
