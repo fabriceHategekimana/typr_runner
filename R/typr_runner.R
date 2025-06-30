@@ -18,13 +18,7 @@ run_typr_file <- function() {
   # Construire la commande complète
   commande1 <- paste0("cat ", nom_fichier)
   
-  # Créer un nouveau terminal et exécuter la commande
-  terminal_id <- rstudioapi::terminalCreate(
-    caption = paste("TypR -", nom_fichier),
-    show = TRUE
-  )
-  
   # Envoyer la commande au terminal
   #rstudioapi::terminalExecute(commande1, workingDir = repertoire, env = env_vars, show = TRUE)
-  rstudioapi::terminalExecute(commande1, workingDir = repertoire)
+  rstudioapi::terminalExecute(commande1, workingDir = repertoire, show = TRUE)
 }
