@@ -25,5 +25,5 @@ run_typr_file <- function() {
   )
   
   # Envoyer la commande au terminal
-  rstudioapi::terminalExecute(terminal_id, commande1, workingDir = repertoire, env = env_vars, show = TRUE)
+  rstudioapi::terminalExecute(commande1, workingDir = repertoire, env = env_vars, show = TRUE)
 }
