@@ -11,6 +11,7 @@ run_typr_file <- function() {
     return()
   }
   
+  env_vars <- Sys.getenv()
   nom_fichier <- basename(context$path)
   repertoire <- dirname(context$path)
   
@@ -24,5 +25,5 @@ run_typr_file <- function() {
   )
   
   # Envoyer la commande au terminal
-  rstudioapi::terminalExecute(terminal_id, commande1, workingDir = repertoire)
+  rstudioapi::terminalExecute(terminal_id, commande1, workingDir = repertoire, env = env_vars)
 }
