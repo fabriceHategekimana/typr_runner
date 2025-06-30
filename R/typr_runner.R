@@ -17,10 +17,9 @@ run_typr_file <- function() {
   
   # Construire la commande complète
   #commande1 <- paste0("typr ", nom_fichier)
-  commande1 <- paste0("ls")
+  commande1 <- "pwd" 
   
   # Envoyer la commande au terminal
   #rstudioapi::terminalExecute(commande1, workingDir = repertoire, env = env_vars, show = TRUE)
-  #rstudioapi::terminalExecute(commande1, workingDir = repertoire, show = TRUE)
-  rstudioapi::terminalExecute(commande1, show = TRUE)
+  rstudioapi::terminalExecute(commande1, workingDir = repertoire, show = TRUE)
 }
