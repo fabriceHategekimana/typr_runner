@@ -31,7 +31,7 @@ run_typr_project <- function() {
   #commande1 <- paste0("/home/fabrice/sh/typr run", "2&>1")
   #rstudioapi::terminalExecute(commande1, workingDir = repertoire, show = TRUE)
 
-	result <- system("typr run", intern = TRUE)
+	result <- system("/home/fabrice/sh/typr run", intern = TRUE)
 	print(result)
 
 }
