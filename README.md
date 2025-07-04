@@ -1,5 +1,7 @@
 # typr_runner
 
+![](img/rtypr.png)
+
 Description of your package goes here.
 
 ## Installation
