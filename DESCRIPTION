@@ -5,3 +5,4 @@ Authors: Fabrice Hategekimana
 Description: Package description.
 License: MIT
 Imports: rstudioapi
+RoxygenNote: 7.3.2
