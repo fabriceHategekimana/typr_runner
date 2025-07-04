@@ -23,8 +23,9 @@ run_typr_file <- function() {
   nom_fichier <- basename(context$path)
   repertoire <- dirname(context$path)
   
-  commande1 <- paste0("/home/fabrice/sh/typr ", nom_fichier, " 2>&1")
-  rstudioapi::terminalExecute(commande1, workingDir = repertoire, show = TRUE)
+	exe_path <- system.file("bin", get_executable(), package = "typr.runner")
+	result <- system(paste0(exe_path, nom_fichier), intern = TRUE)
+	cat(paste(result, collapse = "\n"))
 }
 
 #' Run TypR project in terminal
