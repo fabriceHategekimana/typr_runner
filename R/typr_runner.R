@@ -8,7 +8,7 @@ get_executable <- function() {
 
 #' Create a TypR project
 #' @export
-new <- function(path) {
+typr_new <- function(path) {
   install.packages(c("devtools", "usethis", "roxygen2", "testthat"))
   
   env_vars <- Sys.getenv()
