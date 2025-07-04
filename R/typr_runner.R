@@ -33,7 +33,7 @@ run_typr_project <- function() {
 
 	exe_path <- system.file("bin", "typr", package = "typr.runner")
 
-	result <- system(past0(exec_path, " run"), intern = TRUE)
+	result <- system(paste0(exec_path, " run"), intern = TRUE)
 	print(result)
 }
 
