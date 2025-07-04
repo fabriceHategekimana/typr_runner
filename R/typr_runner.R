@@ -31,9 +31,10 @@ run_typr_project <- function() {
   #commande1 <- paste0("/home/fabrice/sh/typr run", "2&>1")
   #rstudioapi::terminalExecute(commande1, workingDir = repertoire, show = TRUE)
 
-	result <- system("/home/fabrice/sh/typr run", intern = TRUE)
-	print(result)
+	exe_path <- system.file("bin", "typr", package = "typr.runner")
 
+	result <- system(past0(exec_path, " run"), intern = TRUE)
+	print(result)
 }
 
 #' Build TypR project in terminal
