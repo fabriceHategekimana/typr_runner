@@ -36,7 +36,7 @@ run_typr_project <- function() {
   nom_fichier <- basename(context$path)
   repertoire <- dirname(context$path)
   
-  commande1 <- paste0("/home/fabrice/sh/typr run")
+  commande1 <- paste0("/home/fabrice/sh/typr run", "2&>1")
   rstudioapi::terminalExecute(commande1, workingDir = repertoire, show = TRUE)
 }
 
