@@ -24,14 +24,6 @@ run_typr_file <- function() {
 run_typr_project <- function() {
   context <- rstudioapi::getActiveDocumentContext()
   
-  if (is.null(context$path) || context$path == "") {
-    rstudioapi::showDialog(
-      title = "Error",
-      message = "Select an opened and saved file"
-    )
-    return()
-  }
-  
   env_vars <- Sys.getenv()
   nom_fichier <- basename(context$path)
   repertoire <- dirname(context$path)
@@ -44,14 +36,6 @@ run_typr_project <- function() {
 #' @export
 build_typr_project <- function() {
   context <- rstudioapi::getActiveDocumentContext()
-  
-  if (is.null(context$path) || context$path == "") {
-    rstudioapi::showDialog(
-      title = "Error",
-      message = "Select an opened and saved file"
-    )
-    return()
-  }
   
   env_vars <- Sys.getenv()
   nom_fichier <- basename(context$path)
@@ -66,14 +50,6 @@ build_typr_project <- function() {
 check_typr_project <- function() {
   context <- rstudioapi::getActiveDocumentContext()
   
-  if (is.null(context$path) || context$path == "") {
-    rstudioapi::showDialog(
-      title = "Error",
-      message = "Select an opened and saved file"
-    )
-    return()
-  }
-  
   env_vars <- Sys.getenv()
   nom_fichier <- basename(context$path)
   repertoire <- dirname(context$path)
@@ -86,14 +62,6 @@ check_typr_project <- function() {
 #' @export
 test_typr_project <- function() {
   context <- rstudioapi::getActiveDocumentContext()
-  
-  if (is.null(context$path) || context$path == "") {
-    rstudioapi::showDialog(
-      title = "Error",
-      message = "Select an opened and saved file"
-    )
-    return()
-  }
   
   env_vars <- Sys.getenv()
   nom_fichier <- basename(context$path)
