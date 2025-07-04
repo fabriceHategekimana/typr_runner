@@ -38,7 +38,7 @@ run_typr_project <- function() {
   
 	exe_path <- system.file("bin", get_executable(), package = "typr.runner")
 	result <- system(paste0(exe_path, " run"), intern = TRUE)
-	print(paste(result, collapse = "\r"))
+	cat(paste(result, collapse = "\n"))
 }
 
 #' Build TypR project in terminal
@@ -49,13 +49,10 @@ build_typr_project <- function() {
   env_vars <- Sys.getenv()
   nom_fichier <- basename(context$path)
   repertoire <- dirname(context$path)
-  
-  commande1 <- paste0("/home/fabrice/sh/typr build", " 2>&1")
-  rstudioapi::terminalExecute(commande1, workingDir = repertoire, show = TRUE)
 
 	exe_path <- system.file("bin", get_executable(), package = "typr.runner")
 	result <- system(paste0(exe_path, " build"), intern = TRUE)
-	print(paste(result, collapse = "\r"))
+	cat(paste(result, collapse = "\n"))
 }
 
 #' Check TypR project in terminal
@@ -67,8 +64,9 @@ check_typr_project <- function() {
   nom_fichier <- basename(context$path)
   repertoire <- dirname(context$path)
   
-  commande1 <- paste0("/home/fabrice/sh/typr check", " 2>&1")
-  rstudioapi::terminalExecute(commande1, workingDir = repertoire, show = TRUE)
+	exe_path <- system.file("bin", get_executable(), package = "typr.runner")
+	result <- system(paste0(exe_path, " check"), intern = TRUE)
+	cat(paste(result, collapse = "\n"))
 }
 
 #' Check TypR project in terminal
@@ -80,8 +78,9 @@ test_typr_project <- function() {
   nom_fichier <- basename(context$path)
   repertoire <- dirname(context$path)
   
-  commande1 <- paste0("/home/fabrice/sh/typr test", " 2>&1")
-  rstudioapi::terminalExecute(commande1, workingDir = repertoire, show = TRUE)
+	exe_path <- system.file("bin", get_executable(), package = "typr.runner")
+	result <- system(paste0(exe_path, " test"), intern = TRUE)
+	cat(paste(result, collapse = "\n"))
 }
 
 
