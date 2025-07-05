@@ -4,7 +4,8 @@
 
 ## Info
 
-Currently works on Windows and Linux (Ubuntu)
+A [TypR](https://github.com/fabriceHategekimana/typr) for the main project written in Rust.
+ runner for RStudio that currently works on Windows and Linux (Ubuntu)
 
 ## Installation
 
