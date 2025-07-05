@@ -6,7 +6,7 @@ Description of your package goes here.
 
 ## Installation
 
-You should have TypR installed in your system. You can check [rtypr](https://github.com/fabriceHategekimana/rtypr) if you want or just download the binary from [main](https://github.com/fabriceHategekimana/typr) repo
+You should have TypR installed in your system. You can check [TypR](https://github.com/fabriceHategekimana/typr) for the main project written in Rust.
 
 Juste run this on RStudio:
 
