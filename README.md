@@ -36,3 +36,27 @@ You can click to the `Run TypR project` addin or use
 ```r
 typr.runner::run()
 ```
+
+## Building
+
+You can click to the `Build TypR project` addin or use
+
+```r
+typr.runner::build()
+```
+
+## Checking
+
+You can click to the `Check TypR project` addin or use
+
+```r
+typr.runner::check()
+```
+
+## Testing
+
+You can click to the `Test TypR project` addin or use
+
+```r
+typr.runner::test()
+```
