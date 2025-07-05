@@ -8,7 +8,7 @@ get_executable <- function() {
 
 #' Create a TypR project
 #' @export
-typr_new <- function(path) {
+new <- function(path) {
   #install.packages(c("devtools", "usethis", "roxygen2", "testthat"))
 	exe_path <- system.file("bin", get_executable(), package = "typr.runner")
 	result <- system(paste0(exe_path, " new ", path), intern = TRUE)
