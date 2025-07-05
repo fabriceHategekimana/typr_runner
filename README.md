@@ -2,7 +2,10 @@
 
 ![](img/rtypr.png)
 
-Description of your package goes here.
+
+## Info
+
+Currently works on Windows and Linux (Ubuntu)
 
 ## Installation
 
