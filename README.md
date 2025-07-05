@@ -2,7 +2,6 @@
 
 ![](img/rtypr.png)
 
-
 ## Info
 
 Currently works on Windows and Linux (Ubuntu)
