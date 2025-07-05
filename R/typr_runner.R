@@ -10,11 +10,6 @@ get_executable <- function() {
 #' @export
 typr_new <- function(path) {
   #install.packages(c("devtools", "usethis", "roxygen2", "testthat"))
-  
-  env_vars <- Sys.getenv()
-  nom_fichier <- basename(context$path)
-  repertoire <- dirname(context$path)
-  
 	exe_path <- system.file("bin", get_executable(), package = "typr.runner")
 	result <- system(paste0(exe_path, " new ", path), intern = TRUE)
 	cat(paste(result, collapse = "\n"))
