@@ -6,3 +6,4 @@ Description: Package description.
 License: MIT
 Imports: rstudioapi
 RoxygenNote: 7.3.2
+Encoding: UTF-8
