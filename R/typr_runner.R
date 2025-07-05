@@ -17,7 +17,7 @@ new <- function(path) {
 
 #' Run TypR files in terminal
 #' @export
-run_typr_file <- function() {
+run_file <- function() {
   context <- rstudioapi::getActiveDocumentContext()
   
   if (is.null(context$path) || context$path == "") {
@@ -39,7 +39,7 @@ run_typr_file <- function() {
 
 #' Run TypR project in terminal
 #' @export
-run_typr_project <- function() {
+run <- function() {
   context <- rstudioapi::getActiveDocumentContext()
   
   env_vars <- Sys.getenv()
@@ -53,7 +53,7 @@ run_typr_project <- function() {
 
 #' Build TypR project in terminal
 #' @export
-build_typr_project <- function() {
+build <- function() {
   context <- rstudioapi::getActiveDocumentContext()
   
   env_vars <- Sys.getenv()
@@ -67,7 +67,7 @@ build_typr_project <- function() {
 
 #' Check TypR project in terminal
 #' @export
-check_typr_project <- function() {
+check <- function() {
   context <- rstudioapi::getActiveDocumentContext()
   
   env_vars <- Sys.getenv()
@@ -79,9 +79,9 @@ check_typr_project <- function() {
 	cat(paste(result, collapse = "\n"))
 }
 
-#' Check TypR project in terminal
+#' Test TypR project in terminal
 #' @export
-test_typr_project <- function() {
+test <- function() {
   context <- rstudioapi::getActiveDocumentContext()
   
   env_vars <- Sys.getenv()
@@ -92,5 +92,3 @@ test_typr_project <- function() {
 	result <- system(paste0(exe_path, " test"), intern = TRUE)
 	cat(paste(result, collapse = "\n"))
 }
-
-
