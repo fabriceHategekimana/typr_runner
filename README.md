@@ -6,6 +6,10 @@
 
 A [TypR](https://github.com/fabriceHategekimana/typr)
  runner for RStudio that currently works on Windows and Linux (Ubuntu)
+ 
+## Tutorial:
+
+There is a short presentation [video](https://youtu.be/GMo20g__nOc) about this package.
 
 ## Installation
 
