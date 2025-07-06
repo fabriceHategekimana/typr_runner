@@ -5,20 +5,20 @@ Interactive: false
 
 Name: Run TypR project
 Description: Run the commande with the file name
-Binding: run_typr_project
+Binding: run
 Interactive: false
 
 Name: Build TypR project
 Description: Run the commande with the file name
-Binding: build_typr_project
+Binding: build
 Interactive: false
 
 Name: Check TypR project
 Description: Run the commande with the file name
-Binding: check_typr_project
+Binding: check
 Interactive: false
 
 Name: Test TypR project
 Description: Run the commande with the file name
-Binding: test_typr_project
+Binding: test
 Interactive: false
