@@ -1,6 +1,6 @@
 Name: Run TypR file
 Description: Run the commande with the file name
-Binding: run_typr_file
+Binding: run_file
 Interactive: false
 
 Name: Run TypR project
